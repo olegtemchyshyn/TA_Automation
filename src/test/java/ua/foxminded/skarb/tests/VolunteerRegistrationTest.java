@@ -1,13 +1,11 @@
 package ua.foxminded.skarb.tests;
 
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import ua.foxminded.skarb.pages.VolunteersSignUpPage;
-import ua.foxminded.skarb.utils.BaseTest;
-
-import java.time.Duration;
+import ua.foxminded.skarb.utils.DataGenerator;
 
 public class VolunteerRegistrationTest extends BaseTest {
 
@@ -19,27 +17,32 @@ public class VolunteerRegistrationTest extends BaseTest {
         String url = "https://skarb.foxminded.ua/registration/volunteers";
         driver.get(url);
         //Assertion to check if the current URL is open
-        Assert.assertEquals("The expected URL doesn't match current URL", driver.getCurrentUrl(), url);
+        Assertions.assertEquals(driver.getCurrentUrl(), url, "The expected URL doesn't match current URL");
         log.info("Volunteer page was open");
 
+        String firstName = DataGenerator.dataGenerator(5);
+        String lastName = DataGenerator.dataGenerator(6);
+        String password = DataGenerator.generatePassword();
+        String email = firstName + "." + lastName + DataGenerator.domainExample();
+
         //Complete the fields on the registration form.
-        VolunteersSignUpPage volunteersSignUpPage = new VolunteersSignUpPage(driver);
-        volunteersSignUpPage.inputRandomFirstName();
-        volunteersSignUpPage.inputRandomLastName();
-        volunteersSignUpPage.inputRandomEmail();
-        volunteersSignUpPage.inputRandomPasswords();
+        VolunteersSignUpPage volunteersSignUpPage = new VolunteersSignUpPage(driver, log);
+        volunteersSignUpPage.inputFirstName(firstName);
+        volunteersSignUpPage.inputLastName(lastName);
+        volunteersSignUpPage.inputEmail(email);
+        volunteersSignUpPage.inputPasswords(password);
         volunteersSignUpPage.selectProgrammingCategory();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+        implicitWait(3);
         volunteersSignUpPage.clickSignUpButton();
 
         //Verification, new URL verification
         String expectedUrl = "https://skarb.foxminded.ua/registration/result/success";
         String actualUrl = driver.getCurrentUrl();
-        Assert.assertEquals("Actual page URL is not the same as expected", expectedUrl, actualUrl);
+        Assertions.assertEquals(expectedUrl, actualUrl, "Actual page URL is not the same as expected");
 
         // Check success message
         WebElement successContent = driver.findElement(By.id("content"));
-        Assert.assertTrue("Success message is not present on the page", successContent.isDisplayed());
+        Assertions.assertTrue(successContent.isDisplayed(), "Success message is not present on the page");
     }
 
 }

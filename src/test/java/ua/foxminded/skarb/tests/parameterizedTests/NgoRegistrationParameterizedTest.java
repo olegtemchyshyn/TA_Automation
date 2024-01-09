@@ -1,23 +1,24 @@
-package ua.foxminded.skarb.tests;
+package ua.foxminded.skarb.tests.parameterizedTests;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.RepeatedTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import ua.foxminded.skarb.pages.*;
+import ua.foxminded.skarb.tests.BaseTest;
 import ua.foxminded.skarb.utils.DataGenerator;
 
-public class NgoRegistrationTest extends BaseTest {
+public class NgoRegistrationParameterizedTest extends BaseTest {
 
-    @Test
+    @RepeatedTest(2)
     public void registerNgo() {
         log.info("Starting register a NGO");
 
         //open URL
-        String ngoUrl = "https://skarb.foxminded.ua/registration/organizations";
+        String ngoUrl = "https://skarb.foxminded.ua/registration/organizations?";
         driver.get(ngoUrl);
         //Assertion to check if the current URL is open
-        Assertions.assertEquals(ngoUrl, driver.getCurrentUrl());
+        Assertions.assertEquals(driver.getCurrentUrl(), ngoUrl, "The expected URL doesn't match current URL");
         log.info("NGO page was open");
 
         String organization = DataGenerator.companyNameGenerator(4);
@@ -32,11 +33,12 @@ public class NgoRegistrationTest extends BaseTest {
         ngoSignUpPage.inputFirstName(firstName);
         ngoSignUpPage.inputLastName(lastName);
         ngoSignUpPage.clickMaleRondoButon();
+        sleep(2000);
         ngoSignUpPage.inputPasswords(password);
         ngoSignUpPage.inputRandomOrganizationName(organization);
         ngoSignUpPage.selectProgrammingCategory();
         ngoSignUpPage.inputPosition(position);
-        implicitWait(3);
+        implicitWait(4);
         ngoSignUpPage.clickSignUpButton();
         log.info("NGO registration form was filled in");
 
@@ -69,7 +71,8 @@ public class NgoRegistrationTest extends BaseTest {
         //Verification,dashboard URL verification
         String expectedUrl = "https://skarb.foxminded.ua/";
         String actualUrl = driver.getCurrentUrl();
-        Assertions.assertEquals(expectedUrl, actualUrl);
+        Assertions.assertEquals(expectedUrl, actualUrl, "Actual page URL is not the same as expected");
         log.info("User successfully log in!");
     }
+
 }

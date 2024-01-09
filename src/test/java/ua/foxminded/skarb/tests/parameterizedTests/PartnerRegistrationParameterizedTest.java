@@ -1,13 +1,13 @@
-package parameterizedTests;
+package ua.foxminded.skarb.tests.parameterizedTests;
 
-import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import ua.foxminded.skarb.pages.*;
-import ua.foxminded.skarb.utils.BaseTest;
+import ua.foxminded.skarb.tests.BaseTest;
+import ua.foxminded.skarb.utils.DataGenerator;
 
 public class PartnerRegistrationParameterizedTest extends BaseTest {
     @ParameterizedTest
@@ -18,36 +18,43 @@ public class PartnerRegistrationParameterizedTest extends BaseTest {
         //Open Home page URL. Click Plus Button
         String homePageUrl = "https://skarb.foxminded.ua/";
         driver.get(homePageUrl);
-        Assert.assertEquals("The expected URL doesn't match current URL", driver.getCurrentUrl(), homePageUrl);
+        Assertions.assertEquals(driver.getCurrentUrl(), homePageUrl, "The expected URL doesn't match current URL");
         log.info("Page was opened");
 
-        new HomePage(driver)
+        String organization = DataGenerator.companyNameGenerator(4);
+        String firstName = DataGenerator.dataGenerator(5);
+        String lastName = DataGenerator.dataGenerator(6);
+        String password = DataGenerator.generatePassword();
+        String email = firstName + "." + lastName + DataGenerator.domainCorporate();
+
+
+        new HomePage(driver, log)
                 .clickPlusButton()
                 .clickPartnerButton();
 
-        new PartnersSignUpPage(driver)
-                .fillRegistrationForm()
+        new PartnersSignUpPage(driver, log)
+                .fillRegistrationForm(email, firstName, lastName, password, organization)
                 .inputPosition(position)
                 .clickSignUpButton();
         log.info("Partners registration form was filled in with position: " + position);
 
         // Verification
         WebElement successContent = driver.findElement(By.id("content"));
-        Assert.assertTrue("Success message is not present on the page", successContent.isDisplayed());
-        CongratsNgoPage congratsNgoPage = new CongratsNgoPage(driver);
+        Assertions.assertTrue(successContent.isDisplayed(), "Success message is not present on the page");
+        CongratsNgoPage congratsNgoPage = new CongratsNgoPage(driver, log);
         congratsNgoPage.switchToMailHog();
 
         //Clicking on confirmation link. Congratulation message!
-        MailHogPage mailHogPage = new MailHogPage(driver);
-        mailHogPage.recentEmailMessage();
+        MailHogPage mailHogPage = new MailHogPage(driver, log);
+        mailHogPage.waitForEmail(email);
         mailHogPage.clickConfirmationLink();
-        NewConfirmationPage newConfirmationPage = new NewConfirmationPage(driver);
+        NewConfirmationPage newConfirmationPage = new NewConfirmationPage(driver, log);
         newConfirmationPage.switchToLastTab();
         newConfirmationPage.waitForConfirmationMessage();
 
         //Verification
         String pageSource = newConfirmationPage.getConfirmationMessage().getText();
-        Assert.assertTrue("Email has not been confirmed", pageSource.contains("Your email confirmed!"));
+        Assertions.assertTrue(pageSource.contains("Your email confirmed!"), "Email has not been confirmed");
         log.info("Your email was confirmed. Congratulation!");
     }
 

@@ -1,5 +1,6 @@
 package ua.foxminded.skarb.pages;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,27 +14,26 @@ public class LoginPage extends BasePageObject {
     private WebElement inputPasswordField;
     @FindBy(xpath = "//button[@name='login-button']")
     private WebElement enterButton;
-    String randomEmail = NgoSignUpPage.randomEmail;
-    String randomPassword = NgoSignUpPage.randomPassword;
 
-    public LoginPage(WebDriver driver) {
-        super(driver);
+    public LoginPage(WebDriver driver, Logger log) {
+        super(driver, log);
         PageFactory.initElements(driver, this);
     }
 
-    public void typeLogin() {
-        inputLoginField.sendKeys(randomEmail);
-        log.info("Login field '" + randomEmail + "' email was used");
+    public void typeLogin(String login) {
+        inputLoginField.sendKeys(login);
+        log.info("Login field '" + login + "' email was used");
     }
 
-    public void typePassword() {
-        inputPasswordField.sendKeys(randomPassword);
-        log.info("Password field '" + randomPassword + "' password was used");
+    public void typePassword(String password) {
+        inputPasswordField.sendKeys(password);
+        log.info("Password field '" + password + "' password was used");
     }
 
-    public PrivatePage clickEnterButton() {
+    public void clickEnterButton() {
         enterButton.click();
-        return new PrivatePage(driver);
+        log.info("Enter button was clicked.");
+        new PrivatePage(driver, log);
     }
 }
 
