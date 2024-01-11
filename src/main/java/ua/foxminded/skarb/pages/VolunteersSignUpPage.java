@@ -24,7 +24,6 @@ public class VolunteersSignUpPage extends BasePageObject {
     @FindBy(xpath = "//button[@name='submit']")
     private WebElement signUpButton;
 
-
     public VolunteersSignUpPage(WebDriver driver, Logger log) {
         super(driver, log);
         PageFactory.initElements(driver, this);

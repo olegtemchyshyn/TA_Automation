@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import ua.foxminded.skarb.pages.*;
-import ua.foxminded.skarb.utils.DataGenerator;
+import ua.foxminded.skarb.testdata.DataGenerator;
 
 public class NgoRegistrationTest extends BaseTest {
 
@@ -25,7 +25,7 @@ public class NgoRegistrationTest extends BaseTest {
         String lastName = DataGenerator.dataGenerator(6);
         String password = DataGenerator.generatePassword();
         String position = DataGenerator.generatePosition();
-        String email = firstName + "." + lastName + DataGenerator.domainCorporate();
+        String email = firstName + "." + lastName + DataGenerator.domainExample();
 
         NgoSignUpPage ngoSignUpPage = new NgoSignUpPage(driver, log);
         ngoSignUpPage.inputEmail(email);
