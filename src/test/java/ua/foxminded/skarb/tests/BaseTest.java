@@ -1,5 +1,6 @@
 package ua.foxminded.skarb.tests;
 
+import com.codeborne.selenide.Configuration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
@@ -9,6 +10,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
+import static com.codeborne.selenide.Selenide.closeWebDriver;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+import static com.codeborne.selenide.WebDriverRunner.isChrome;
+
 public class BaseTest {
 
     protected WebDriver driver;
@@ -17,15 +22,16 @@ public class BaseTest {
     @BeforeEach
     public void setUp() {
         log = LogManager.getLogger(getClass());
-        driver = new ChromeDriver();
+        Configuration.browser = "chrome";
+        WebDriver driver = getWebDriver();
         log.info("Create driver: Chrome");
-        driver.manage().window().maximize();
+        driver.manage().window().maximize();// Configuration.startMaximized = true;
     }
 
     @AfterEach
     public void tearDown() {
         log.info("Close driver");
-        driver.quit();
+        closeWebDriver();
     }
 
     public void implicitWait(int seconds) {

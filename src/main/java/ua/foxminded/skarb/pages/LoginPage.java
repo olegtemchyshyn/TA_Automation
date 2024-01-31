@@ -1,40 +1,37 @@
 package ua.foxminded.skarb.pages;
 
+import com.codeborne.selenide.SelenideElement;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class LoginPage extends BasePageObject {
+//private WebDriver driver = getWebDriver();
 
-    @FindBy(id = "login")
-    private WebElement inputLoginField;
-    @FindBy(id = "password")
-    private WebElement inputPasswordField;
-    @FindBy(xpath = "//button[@name='login-button']")
-    private WebElement enterButton;
+    private SelenideElement inputLoginField = $("login");
+    private SelenideElement inputPasswordField = $("password");
+    private SelenideElement enterButton = $x("//button[@name='login-button']");
 
-    public LoginPage(WebDriver driver, Logger log) {
-        super(driver, log);
-        PageFactory.initElements(driver, this);
+    public LoginPage(Logger log) {
+        super(log);
     }
 
     public void typeLogin(String login) {
-        inputLoginField.sendKeys(login);
+        inputLoginField.setValue(login);
         log.info("Login field '" + login + "' email was used");
     }
-
     public void typePassword(String password) {
-        inputPasswordField.sendKeys(password);
+        inputPasswordField.setValue(password);
         log.info("Password field '" + password + "' password was used");
     }
 
     public void clickEnterButton() {
         enterButton.click();
         log.info("Enter button was clicked.");
-        new PrivatePage(driver, log);
+        new PrivatePage( log);
     }
 
     public LoginPage switchToLogin() {
@@ -42,7 +39,7 @@ public class LoginPage extends BasePageObject {
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get("https://skarb.foxminded.ua/login");
         log.info("Log In tab was open");
-        return new LoginPage(driver, log);
+        return new LoginPage(log);
     }
 }
 

@@ -1,24 +1,22 @@
 package ua.foxminded.skarb.pages;
 
+import com.codeborne.selenide.SelenideElement;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+
+import static com.codeborne.selenide.Selenide.$x;
 
 public class HomePage extends BasePageObject {
 
-    @FindBy(xpath = "//a[@href='/registration']//i")
-    private WebElement registrationPlusButton;
+    private SelenideElement registrationPlusButton = $x("//a[@href='/registration']");
 
-    public HomePage(WebDriver driver, Logger log) {
-        super(driver, log);
-        PageFactory.initElements(driver, this);
+
+    public HomePage( Logger log) {
+        super(log);
     }
 
     public RegistrationPage clickPlusButton() {
         registrationPlusButton.click();
-        return new RegistrationPage(driver, log);
+        return new RegistrationPage(log);
     }
 
 }

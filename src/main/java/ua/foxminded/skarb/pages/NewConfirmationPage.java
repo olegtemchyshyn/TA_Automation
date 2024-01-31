@@ -1,25 +1,22 @@
 package ua.foxminded.skarb.pages;
 
+import com.codeborne.selenide.SelenideElement;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
 import java.util.Set;
+
+import static com.codeborne.selenide.Selenide.$x;
+import static com.codeborne.selenide.Selenide.switchTo;
 
 public class NewConfirmationPage extends BasePageObject {
 
-    @FindBy(xpath = "//div[@class='alert alert-success']//h3[@class='display-3 text-center']")
-    private WebElement confirmationMessage;
+    private SelenideElement confirmationMessage = $x("//div[@class='alert alert-success']//h3[@class='display-3 text-center']");
 
-    public NewConfirmationPage(WebDriver driver, Logger log) {
-        super(driver, log);
-        PageFactory.initElements(driver, this);
+    public NewConfirmationPage(Logger log) {
+        super(log);
     }
 
-    public WebElement getConfirmationMessage() {
+    public SelenideElement getConfirmationMessage() {
         return confirmationMessage;
     }
 
@@ -28,9 +25,9 @@ public class NewConfirmationPage extends BasePageObject {
     }
 
     public void switchToLastTab() {
-        Set<String> allWindows = driver.getWindowHandles();
+        Set<String> allWindows = switchTo().windowHandle();
         for (String currentWindow : allWindows) {
-            driver.switchTo().window(currentWindow);
+            switchTo().window(currentWindow);
         }
     }
 
@@ -40,6 +37,6 @@ public class NewConfirmationPage extends BasePageObject {
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get("https://skarb.foxminded.ua/login");
         log.info("Log In tab was open");
-        return new LoginPage(driver, log);
+        return new LoginPage(log);
     }
 }
