@@ -10,6 +10,7 @@ public class HomePage extends BasePageObject {
     public HomePage() {
         super();
     }
+
     private SelenideElement registrationPlusButton = $x("//a[@href='/registration']");
 
     public RegistrationPage clickPlusButton() {

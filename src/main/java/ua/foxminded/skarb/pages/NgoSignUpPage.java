@@ -19,16 +19,17 @@ public class NgoSignUpPage extends BasePageObject {
     public NgoSignUpPage() {
         super();
     }
-    private SelenideElement emailElement = $("email");
-    private SelenideElement firstNameElement = $("firstName");
-    private SelenideElement lastNameElement = $("lastName");
-    private SelenideElement passwordElement = $("password");
-    private SelenideElement confirmPasswordElement = $("confirmPassword");
-    private SelenideElement categoryElement = $("categoryIds");
+
+    private SelenideElement emailElement = $("#email");
+    private SelenideElement firstNameElement = $("#firstName");
+    private SelenideElement lastNameElement = $("#lastName");
+    private SelenideElement passwordElement = $("#password");
+    private SelenideElement confirmPasswordElement = $("#confirmPassword");
+    private SelenideElement categoryElement = $("#categoryIds");
     private SelenideElement signUpButton = $x("//button[@name='submit']");
-    private SelenideElement maleSexRadioButton = $("male");
-    private SelenideElement organizationNameElement = $("organizationName");
-    private SelenideElement positionInOrganizationElement = $("positionInOrganization");
+    private SelenideElement maleSexRadioButton = $("#male");
+    private SelenideElement organizationNameElement = $("#organizationName");
+    private SelenideElement positionInOrganizationElement = $("#positionInOrganization");
 
     // click on "Female" rondo button
     public void clickMaleRondoButon() {

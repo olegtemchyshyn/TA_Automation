@@ -17,6 +17,7 @@ public class NewConfirmationPage extends BasePageObject {
     public NewConfirmationPage() {
         super();
     }
+
     private SelenideElement confirmationMessage = $x("//div[@class='alert alert-success']//h3[@class='display-3 text-center']");
 
     public SelenideElement getConfirmationMessage() {
@@ -35,7 +36,7 @@ public class NewConfirmationPage extends BasePageObject {
 
     //Open new tab
     public static LoginPage switchToLogin() {
-       String loginHandle = WebDriverRunner.getWebDriver().getWindowHandle();
+        String loginHandle = WebDriverRunner.getWebDriver().getWindowHandle();
         switchTo().newWindow(WindowType.TAB);
         open("https://skarb.foxminded.ua/login");
         log.info("Log In tab was open");

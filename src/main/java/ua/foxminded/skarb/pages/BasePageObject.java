@@ -6,11 +6,13 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.StaleElementReferenceException;
 
 import java.time.Duration;
+
 import static com.codeborne.selenide.Condition.visible;
 
 public class BasePageObject {
 
     protected static Logger log;
+    //private static final Logger log = LogManager.getLogger();
 
     public BasePageObject() {
         log = LogManager.getLogger(this.getClass());

@@ -14,8 +14,9 @@ public class LoginPage extends BasePageObject {
     public LoginPage() {
         super();
     }
-    private SelenideElement inputLoginField = $("login");
-    private SelenideElement inputPasswordField = $("password");
+
+    private SelenideElement inputLoginField = $("#login");
+    private SelenideElement inputPasswordField = $("#password");
     private SelenideElement enterButton = $x("//button[@name='login-button']");
 
     public void typeLogin(String login) {

@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.Duration;
 import java.util.Set;
 
 import static com.codeborne.selenide.Condition.text;
@@ -22,24 +23,17 @@ public class MailHogPage extends BasePageObject {
     public MailHogPage() {
         super();
     }
+
     private SelenideElement emailConfirmationContentElement = $x("//div[@id='content']//h3[@class='display-3 text-center']");
-    private SelenideElement recentEmailMessageElement = $x("//div[@class='msglist-message row ng-scope']//div[contains(text(),'a few seconds ago')]");
-    private SelenideElement confirmationLinkElement = $$x("div.tab-pane.ng-binding.active a[target='_blank']").first(); // or .last() depending on the requirement
+    private SelenideElement confirmationLinkElement = $x("//div[@class='tab-pane ng-binding active']//a[@target='_blank']");
 
     public void waitForEmail(String emailToWait) {
-        SelenideElement recentEmailMessageElement = null;
-        while (recentEmailMessageElement == null) {
-            try {
-                $x("//div[contains(text(),'" + emailToWait + "')]").shouldBe(visible);
-            } catch (org.openqa.selenium.NoSuchElementException e) {
-                log.info("Email containing '" + emailToWait + "' was found.");
-            }
-        }
+        // Wait for the email element containing the specific text to become visible and then click
+        SelenideElement recentEmailMessageElement = $x("//div[contains(text(),'" + emailToWait + "')]").should(visible, Duration.ofSeconds(80));
         recentEmailMessageElement.click();
-        log.info("Driver found registration confirmation email");
+        log.info("Email containing '" + emailToWait + "' was found and clicked.");
     }
 
-    //Find recently received email
     public void switchToLastTab() {
         Set<String> allWindows = getWebDriver().getWindowHandles();
         for (String currentWindow : allWindows) {

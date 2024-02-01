@@ -17,7 +17,7 @@ public class NgoRegistrationTest extends BaseTest {
     String email = firstName + "." + lastName + DataGenerator.domainExample();
 
     @Test
-    public void registerNgo() {
+        public void registerNgo() {
         log.info("Starting register a NGO");
 
         openRegistrationPage("https://skarb.foxminded.ua/registration/organizations");
@@ -45,7 +45,6 @@ public class NgoRegistrationTest extends BaseTest {
         ngoSignUpPage.inputRandomOrganizationName(organization);
         ngoSignUpPage.selectProgrammingCategory();
         ngoSignUpPage.inputPosition(position);
-        implicitWait(3);
         ngoSignUpPage.clickSignUpButton();
         log.info("NGO registration form was filled in");
     }
@@ -69,7 +68,7 @@ public class NgoRegistrationTest extends BaseTest {
 
         NewConfirmationPage newConfirmationPage = new NewConfirmationPage();
         newConfirmationPage.switchToLastTab();
-       // newConfirmationPage.waitForConfirmationMessage();
+        newConfirmationPage.waitForConfirmationMessage();
 
         //Verification
         String pageSource = newConfirmationPage.getConfirmationMessage().getText();
@@ -80,7 +79,6 @@ public class NgoRegistrationTest extends BaseTest {
     @Step("Logging in with registered user credentials")
     private void logInNgo() {
         NewConfirmationPage.switchToLogin();
-
         LoginPage loginPage = new LoginPage();
         loginPage.typeLogin(email);
         loginPage.typePassword(password);

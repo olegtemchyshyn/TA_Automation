@@ -12,6 +12,7 @@ public class PartnersSignUpPage extends BasePageObject {
     public PartnersSignUpPage() {
         super();
     }
+
     private SelenideElement signUpButton = $x("//button[@name='submit']");
     private SelenideElement emailElement = $("#email");
     private SelenideElement firstNameElement = $("#firstName");

@@ -15,7 +15,6 @@ public class BaseTest {
     protected WebDriver driver;
     protected Logger log;
 
-
     @BeforeEach
     public void setUp() {
         log = LogManager.getLogger(getClass());
