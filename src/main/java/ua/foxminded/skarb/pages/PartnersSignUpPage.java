@@ -9,7 +9,10 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class PartnersSignUpPage extends BasePageObject {
 
-    private SelenideElement signUpButton = $x("button[name='submit']");
+    public PartnersSignUpPage() {
+        super();
+    }
+    private SelenideElement signUpButton = $x("//button[@name='submit']");
     private SelenideElement emailElement = $("#email");
     private SelenideElement firstNameElement = $("#firstName");
     private SelenideElement lastNameElement = $("#lastName");
@@ -17,13 +20,8 @@ public class PartnersSignUpPage extends BasePageObject {
     private SelenideElement passwordElement = $("#password");
     private SelenideElement confirmPasswordElement = $("#confirmPassword");
     private SelenideElement organizationNameElement = $("#organizationName");
-    private SelenideElement categoryElement = $x("select#categoryIds");
+    private SelenideElement categoryElement = $("select#categoryIds");
     private SelenideElement positionInOrganizationElement = $("#positionInOrganization");
-
-
-    public PartnersSignUpPage(Logger log) {
-        super(log);
-    }
 
     // Enter random email
     public void inputRandomEmail(String email) {
@@ -93,6 +91,6 @@ public class PartnersSignUpPage extends BasePageObject {
     public CongratsNgoPage clickSignUpButton() {
         signUpButton.click();
         log.info("Sign Up button was clicked");
-        return new CongratsNgoPage(log);
+        return new CongratsNgoPage();
     }
 }

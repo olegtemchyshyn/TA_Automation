@@ -7,16 +7,14 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class HomePage extends BasePageObject {
 
-    private SelenideElement registrationPlusButton = $x("//a[@href='/registration']");
-
-
-    public HomePage( Logger log) {
-        super(log);
+    public HomePage() {
+        super();
     }
+    private SelenideElement registrationPlusButton = $x("//a[@href='/registration']");
 
     public RegistrationPage clickPlusButton() {
         registrationPlusButton.click();
-        return new RegistrationPage(log);
+        return new RegistrationPage();
     }
 
 }

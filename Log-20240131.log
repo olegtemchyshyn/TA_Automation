@@ -1,0 +1,305 @@
+2024-01-31 14:26:13.411 [main] INFO  ua.foxminded.skarb.tests.VolunteerRegistrationTest - Close driver
+2024-01-31 14:28:20.197 [main] INFO  ua.foxminded.skarb.tests.VolunteerRegistrationTest - Create driver: Chrome
+2024-01-31 14:28:20.629 [main] INFO  ua.foxminded.skarb.tests.VolunteerRegistrationTest - Starting register a Volunteer
+2024-01-31 14:28:24.338 [main] INFO  ua.foxminded.skarb.tests.VolunteerRegistrationTest - Volunteer page was open
+2024-01-31 14:28:24.342 [main] INFO  ua.foxminded.skarb.tests.VolunteerRegistrationTest - Registration form completed
+2024-01-31 14:28:24.448 [main] INFO  ua.foxminded.skarb.tests.VolunteerRegistrationTest - Close driver
+2024-01-31 16:16:21.312 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 16:16:21.728 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 16:16:26.790 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 16:16:26.891 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 16:23:06.056 [main] INFO  ua.foxminded.skarb.tests.VolunteerRegistrationTest - Create driver: Chrome
+2024-01-31 16:23:06.474 [main] INFO  ua.foxminded.skarb.tests.VolunteerRegistrationTest - Starting register a Volunteer
+2024-01-31 16:23:11.428 [main] INFO  ua.foxminded.skarb.tests.VolunteerRegistrationTest - Volunteer page was open
+2024-01-31 16:23:11.434 [main] INFO  ua.foxminded.skarb.tests.VolunteerRegistrationTest - Registration form completed
+2024-01-31 16:23:11.543 [main] INFO  ua.foxminded.skarb.tests.VolunteerRegistrationTest - Close driver
+2024-01-31 16:28:03.766 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 16:28:04.182 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 16:28:34.918 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 16:33:55.203 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 16:33:55.618 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 16:34:02.406 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 16:34:05.946 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:11:02.034 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:12:44.264 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:21:23.416 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 20:21:23.829 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 20:21:25.853 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 20:21:27.606 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:27:07.984 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 20:27:08.116 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 20:27:10.148 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 20:27:11.963 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:27:46.533 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 20:27:46.953 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 20:27:49.715 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 20:27:51.909 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:28:56.863 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 20:28:57.280 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 20:30:29.585 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 20:30:29.715 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 20:30:44.636 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 20:31:02.667 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:32:00.252 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 20:32:00.374 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 20:32:07.834 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 20:32:18.668 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:34:54.022 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 20:34:54.433 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 20:34:59.048 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 20:35:03.077 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:55:17.313 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 20:55:17.428 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 20:55:20.622 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 20:55:24.031 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:56:21.574 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 20:56:21.689 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 20:56:24.814 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 20:56:27.559 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:56:31.504 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 20:56:31.618 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 20:56:34.054 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 20:56:36.920 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:58:22.072 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 20:58:22.490 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 20:58:27.978 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 20:58:46.375 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 20:59:25.814 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 20:59:26.232 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 20:59:47.360 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:00:00.418 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:00:00.832 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:00:40.539 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:00:40.959 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:00:47.644 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:00:54.190 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Sqqt.Pjkeh@skarb.ngo
+2024-01-31 21:00:54.239 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Sqqt
+2024-01-31 21:00:54.287 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Pjkeh
+2024-01-31 21:00:54.321 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:00:54.419 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:00:54.467 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: IKUZ
+2024-01-31 21:00:54.486 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:05:20.436 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:05:20.851 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:05:24.379 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:05:27.659 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Rytn.Sadpl@skarb.ngo
+2024-01-31 21:05:27.710 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Rytn
+2024-01-31 21:05:27.759 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Sadpl
+2024-01-31 21:05:27.794 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:05:27.900 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:05:27.951 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: KVTP
+2024-01-31 21:05:27.970 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:09:14.252 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:09:14.665 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:09:16.994 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:09:19.756 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Ymuv.Qwvlh@skarb.ngo
+2024-01-31 21:09:19.805 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Ymuv
+2024-01-31 21:09:19.852 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Qwvlh
+2024-01-31 21:09:19.884 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:09:19.978 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:09:20.025 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: XHXI
+2024-01-31 21:09:20.128 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:09:20.184 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:09:24.757 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:11:34.397 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:11:34.817 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:11:37.396 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:11:40.430 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Tuow.Asavx@skarb.ngo
+2024-01-31 21:11:40.479 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Tuow
+2024-01-31 21:11:40.527 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Asavx
+2024-01-31 21:11:40.562 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:11:40.668 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:11:40.722 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: AKSO
+2024-01-31 21:11:40.839 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:11:40.890 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:11:45.299 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:13:10.357 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:13:10.772 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:13:13.136 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:13:16.120 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Vrri.Bzdou@skarb.ngo
+2024-01-31 21:13:16.171 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Vrri
+2024-01-31 21:13:16.220 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Bzdou
+2024-01-31 21:13:16.253 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:13:16.357 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:13:16.408 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: LFZG
+2024-01-31 21:13:16.518 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:13:16.570 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:13:21.098 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:15:10.106 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:15:10.520 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:15:12.800 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:15:16.268 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Rcod.Gvzhl@skarb.ngo
+2024-01-31 21:15:16.316 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Rcod
+2024-01-31 21:15:16.364 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Gvzhl
+2024-01-31 21:15:16.398 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:15:16.500 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:15:16.550 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: NMYP
+2024-01-31 21:15:16.664 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:15:16.715 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:15:18.545 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sign Up button was clicked
+2024-01-31 21:15:18.546 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Partners registration form was filled in
+2024-01-31 21:15:22.323 [main] INFO  ua.foxminded.skarb.pages.CongratsNgoPage - Mail tab was open
+2024-01-31 21:15:26.918 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:15:31.353 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:15:31.768 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:15:33.932 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:15:36.382 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Xizm.Tpbgx@skarb.ngo
+2024-01-31 21:15:36.434 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Xizm
+2024-01-31 21:15:36.483 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Tpbgx
+2024-01-31 21:15:36.516 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:15:36.618 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:15:36.666 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: IRIF
+2024-01-31 21:15:36.772 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:15:36.820 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:15:38.439 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sign Up button was clicked
+2024-01-31 21:15:38.441 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Partners registration form was filled in
+2024-01-31 21:15:40.953 [main] INFO  ua.foxminded.skarb.pages.CongratsNgoPage - Mail tab was open
+2024-01-31 21:15:45.345 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:20:31.289 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:20:31.702 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:20:33.845 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:20:36.034 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Dnpq.Gksmd@skarb.ngo
+2024-01-31 21:20:36.082 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Dnpq
+2024-01-31 21:20:36.130 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Gksmd
+2024-01-31 21:20:36.162 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:20:36.263 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:20:36.313 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: GWKI
+2024-01-31 21:20:36.418 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:20:36.475 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:20:38.274 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sign Up button was clicked
+2024-01-31 21:20:38.276 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Partners registration form was filled in
+2024-01-31 21:20:41.337 [main] INFO  ua.foxminded.skarb.pages.CongratsNgoPage - Mail tab was open
+2024-01-31 21:20:45.746 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:27:35.398 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:27:35.812 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:27:42.044 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:27:50.222 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Enfc.Zivaq@skarb.ngo
+2024-01-31 21:27:50.273 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Enfc
+2024-01-31 21:27:50.322 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Zivaq
+2024-01-31 21:27:50.359 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:27:50.469 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:27:50.519 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: SPNL
+2024-01-31 21:27:50.628 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:27:50.678 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:27:55.292 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sign Up button was clicked
+2024-01-31 21:27:55.296 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Partners registration form was filled in
+2024-01-31 21:27:58.170 [main] INFO  ua.foxminded.skarb.pages.CongratsNgoPage - Mail tab was open
+2024-01-31 21:28:00.162 [main] INFO  ua.foxminded.skarb.pages.MailHogPage - Email containing 'Enfc.Zivaq@skarb.ngo' was found.
+2024-01-31 21:28:00.180 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:36:11.565 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:36:11.683 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:36:13.563 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:36:15.730 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Clez.Redxl@skarb.ngo
+2024-01-31 21:36:15.779 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Clez
+2024-01-31 21:36:15.826 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Redxl
+2024-01-31 21:36:15.856 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:36:15.976 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:36:16.029 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: FGRG
+2024-01-31 21:36:16.139 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:36:16.186 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:36:17.635 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sign Up button was clicked
+2024-01-31 21:36:17.637 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Partners registration form was filled in
+2024-01-31 21:36:20.309 [main] INFO  ua.foxminded.skarb.pages.CongratsNgoPage - Mail tab was open
+2024-01-31 21:36:24.717 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:40:30.029 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:40:30.207 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:40:32.347 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:40:34.607 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Layu.Ahdff@skarb.ngo
+2024-01-31 21:40:34.657 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Layu
+2024-01-31 21:40:34.705 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Ahdff
+2024-01-31 21:40:34.740 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:40:34.889 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:40:34.979 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: PNQO
+2024-01-31 21:40:35.185 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:40:35.245 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:40:36.782 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sign Up button was clicked
+2024-01-31 21:40:36.784 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Partners registration form was filled in
+2024-01-31 21:40:39.291 [main] INFO  ua.foxminded.skarb.pages.CongratsNgoPage - Mail tab was open
+2024-01-31 21:40:43.727 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:42:24.652 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:42:24.823 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:42:52.670 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:43:22.679 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Vrii.Elqzl@skarb.ngo
+2024-01-31 21:43:22.734 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Vrii
+2024-01-31 21:43:22.785 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Elqzl
+2024-01-31 21:43:22.823 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:43:22.934 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:43:22.987 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: YTOC
+2024-01-31 21:43:23.099 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:43:23.154 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:43:40.288 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sign Up button was clicked
+2024-01-31 21:43:40.311 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Partners registration form was filled in
+2024-01-31 21:43:57.406 [main] INFO  ua.foxminded.skarb.pages.CongratsNgoPage - Mail tab was open
+2024-01-31 21:44:06.962 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:50:37.464 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:50:37.875 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:50:42.357 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:50:46.657 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Xdjs.Xzhqx@skarb.ngo
+2024-01-31 21:50:46.707 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Xdjs
+2024-01-31 21:50:46.755 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Xzhqx
+2024-01-31 21:50:46.790 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:50:46.888 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:50:46.938 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: IBEB
+2024-01-31 21:50:47.050 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:50:47.105 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:50:49.411 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sign Up button was clicked
+2024-01-31 21:50:49.413 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Partners registration form was filled in
+2024-01-31 21:50:54.758 [main] INFO  ua.foxminded.skarb.pages.CongratsNgoPage - Mail tab was open
+2024-01-31 21:53:29.606 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:53:30.021 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:53:33.798 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:53:52.550 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Gguo.Srixw@skarb.ngo
+2024-01-31 21:53:52.601 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Gguo
+2024-01-31 21:53:52.650 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Srixw
+2024-01-31 21:53:52.684 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:53:52.792 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:53:52.849 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: OZUC
+2024-01-31 21:53:52.984 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:53:53.038 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:54:02.885 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sign Up button was clicked
+2024-01-31 21:54:02.887 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Partners registration form was filled in
+2024-01-31 21:54:06.007 [main] INFO  ua.foxminded.skarb.pages.CongratsNgoPage - Mail tab was open
+2024-01-31 21:57:40.304 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:57:40.418 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 21:57:47.881 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 21:58:01.972 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Indp.Rkzfn@skarb.ngo
+2024-01-31 21:58:02.044 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Indp
+2024-01-31 21:58:02.110 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Rkzfn
+2024-01-31 21:58:02.153 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 21:58:02.295 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 21:58:02.360 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: WQSC
+2024-01-31 21:58:02.653 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 21:58:02.765 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 21:58:18.432 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sign Up button was clicked
+2024-01-31 21:58:18.439 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Partners registration form was filled in
+2024-01-31 21:58:22.346 [main] INFO  ua.foxminded.skarb.pages.CongratsNgoPage - Mail tab was open
+2024-01-31 21:58:33.813 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver
+2024-01-31 21:59:55.482 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 21:59:55.903 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 22:00:03.192 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 22:00:13.212 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Qagx.Fhdiy@skarb.ngo
+2024-01-31 22:00:13.315 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Qagx
+2024-01-31 22:00:13.370 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Fhdiy
+2024-01-31 22:00:13.402 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 22:00:13.508 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 22:00:13.561 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: CVVE
+2024-01-31 22:00:13.691 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 22:00:13.742 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 22:00:17.834 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sign Up button was clicked
+2024-01-31 22:00:17.839 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Partners registration form was filled in
+2024-01-31 22:00:24.228 [main] INFO  ua.foxminded.skarb.pages.CongratsNgoPage - Mail tab was open
+2024-01-31 22:03:55.859 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Create driver: Chrome
+2024-01-31 22:03:55.999 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Starting register a Partner
+2024-01-31 22:03:59.636 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Page was opened
+2024-01-31 22:04:03.647 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Email was written: Iucz.Osggr@skarb.ngo
+2024-01-31 22:04:03.697 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - First name was written: Iucz
+2024-01-31 22:04:03.744 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Last name was written: Osggr
+2024-01-31 22:04:03.777 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sex:Female was chosen.
+2024-01-31 22:04:03.889 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Password & Confirmation were written.
+2024-01-31 22:04:03.939 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Organization name was written: EKQI
+2024-01-31 22:04:04.050 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - 'Programming' category was chosen.
+2024-01-31 22:04:04.099 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Position: Manager was written.
+2024-01-31 22:04:06.828 [main] INFO  ua.foxminded.skarb.pages.PartnersSignUpPage - Sign Up button was clicked
+2024-01-31 22:04:06.830 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Partners registration form was filled in
+2024-01-31 22:04:10.281 [main] INFO  ua.foxminded.skarb.pages.CongratsNgoPage - Mail tab was open
+2024-01-31 22:04:24.712 [main] INFO  ua.foxminded.skarb.tests.PartnerRegistrationTest - Close driver

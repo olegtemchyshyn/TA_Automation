@@ -1,6 +1,7 @@
 package ua.foxminded.skarb.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
@@ -9,15 +10,13 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class LoginPage extends BasePageObject {
-//private WebDriver driver = getWebDriver();
 
+    public LoginPage() {
+        super();
+    }
     private SelenideElement inputLoginField = $("login");
     private SelenideElement inputPasswordField = $("password");
     private SelenideElement enterButton = $x("//button[@name='login-button']");
-
-    public LoginPage(Logger log) {
-        super(log);
-    }
 
     public void typeLogin(String login) {
         inputLoginField.setValue(login);
@@ -31,15 +30,15 @@ public class LoginPage extends BasePageObject {
     public void clickEnterButton() {
         enterButton.click();
         log.info("Enter button was clicked.");
-        new PrivatePage( log);
+        new PrivatePage();
     }
 
     public LoginPage switchToLogin() {
-        String loginHandle = driver.getWindowHandle();
-        driver.switchTo().newWindow(WindowType.TAB);
-        driver.get("https://skarb.foxminded.ua/login");
+        String loginHandle = WebDriverRunner.getWebDriver().getWindowHandle();
+        switchTo().newWindow(WindowType.TAB);
+        open("https://skarb.foxminded.ua/login");
         log.info("Log In tab was open");
-        return new LoginPage(log);
+        return new LoginPage();
     }
 }
 

@@ -36,7 +36,7 @@ public class VolunteerRegistrationTest extends BaseTest {
         log.info("Registration form completed");
 
         // Use the volunteer's data to fill in the sign-up page
-        VolunteersSignUpPage signUpPage = new VolunteersSignUpPage(driver, log);
+        VolunteersSignUpPage signUpPage = new VolunteersSignUpPage();
         signUpPage.inputEmail(volunteer.getEmail());
         signUpPage.inputFirstName(volunteer.getFirstName());
         signUpPage.inputLastName(volunteer.getLastName());

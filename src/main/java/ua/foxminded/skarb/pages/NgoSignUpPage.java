@@ -16,7 +16,9 @@ public class NgoSignUpPage extends BasePageObject {
 
     public String randomEmail;
     public String randomPassword;
-
+    public NgoSignUpPage() {
+        super();
+    }
     private SelenideElement emailElement = $("email");
     private SelenideElement firstNameElement = $("firstName");
     private SelenideElement lastNameElement = $("lastName");
@@ -27,10 +29,6 @@ public class NgoSignUpPage extends BasePageObject {
     private SelenideElement maleSexRadioButton = $("male");
     private SelenideElement organizationNameElement = $("organizationName");
     private SelenideElement positionInOrganizationElement = $("positionInOrganization");
-
-    public NgoSignUpPage(Logger log) {
-        super(log);
-    }
 
     // click on "Female" rondo button
     public void clickMaleRondoButon() {
@@ -63,7 +61,7 @@ public class NgoSignUpPage extends BasePageObject {
     public CongratsNgoPage clickSignUpButton() {
         signUpButton.click();
         log.info("Sign Up button was clicked.");
-        return new CongratsNgoPage(log);
+        return new CongratsNgoPage();
     }
 
     public void inputEmail(String email) {

@@ -36,7 +36,7 @@ public class NgoRegistrationTest extends BaseTest {
 
     @Step("Filing in the NGO registration form")
     private void fillingInForm() {
-        NgoSignUpPage ngoSignUpPage = new NgoSignUpPage(driver, log);
+        NgoSignUpPage ngoSignUpPage = new NgoSignUpPage();
         ngoSignUpPage.inputEmail(email);
         ngoSignUpPage.inputFirstName(firstName);
         ngoSignUpPage.inputLastName(lastName);
@@ -59,17 +59,17 @@ public class NgoRegistrationTest extends BaseTest {
 
     @Step("Confirming email")
     private void confirmEmail() {
-        CongratsNgoPage congratsNgoPage = new CongratsNgoPage(driver, log);
+        CongratsNgoPage congratsNgoPage = new CongratsNgoPage( );
         congratsNgoPage.switchToMailHog();
 
         //Clicking on confirmation link. Congratulation message!
-        MailHogPage mailHogPage = new MailHogPage(driver, log);
+        MailHogPage mailHogPage = new MailHogPage();
         mailHogPage.waitForEmail(email);
         mailHogPage.clickConfirmationLink();
 
-        NewConfirmationPage newConfirmationPage = new NewConfirmationPage(driver, log);
+        NewConfirmationPage newConfirmationPage = new NewConfirmationPage();
         newConfirmationPage.switchToLastTab();
-        newConfirmationPage.waitForConfirmationMessage();
+       // newConfirmationPage.waitForConfirmationMessage();
 
         //Verification
         String pageSource = newConfirmationPage.getConfirmationMessage().getText();
@@ -81,7 +81,7 @@ public class NgoRegistrationTest extends BaseTest {
     private void logInNgo() {
         NewConfirmationPage.switchToLogin();
 
-        LoginPage loginPage = new LoginPage(driver, log);
+        LoginPage loginPage = new LoginPage();
         loginPage.typeLogin(email);
         loginPage.typePassword(password);
         loginPage.clickEnterButton();

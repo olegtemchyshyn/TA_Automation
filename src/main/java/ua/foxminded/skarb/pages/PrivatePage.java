@@ -6,9 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PrivatePage extends BasePageObject {
 
-    public PrivatePage(Logger log) {
-        super(log);
-
+    public PrivatePage() {
+        super();
     }
 
 }

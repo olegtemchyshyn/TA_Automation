@@ -1,6 +1,5 @@
 package ua.foxminded.skarb.tests;
 
-import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -8,19 +7,15 @@ import org.openqa.selenium.WebElement;
 import ua.foxminded.skarb.pages.*;
 import ua.foxminded.skarb.testdata.DataGenerator;
 
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.WebDriverRunner.url;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class PartnerRegistrationTest extends BaseTest {
     @Test
     public void registerPartner() {
         log.info("Starting register a Partner");
 
         //Open Home page URL. Click Plus Button
-        Configuration.baseUrl = "https://skarb.foxminded.ua";
-        open("/");
-        assertEquals(Configuration.baseUrl, url());
+        String homePageUrl = "https://skarb.foxminded.ua/";
+        driver.get(homePageUrl);
+        Assertions.assertEquals(driver.getCurrentUrl(), homePageUrl, "The expected URL doesn't match current URL");
         log.info("Page was opened");
 
         String organization = DataGenerator.companyNameGenerator(4);
@@ -29,11 +24,11 @@ public class PartnerRegistrationTest extends BaseTest {
         String password = DataGenerator.generatePassword();
         String email = firstName + "." + lastName + DataGenerator.domainCorporate();
 
-        new HomePage(log)
+        new HomePage()
                 .clickPlusButton()
                 .clickPartnerButton();
 
-        new PartnersSignUpPage(log)
+        new PartnersSignUpPage()
                 .fillRegistrationForm(email, firstName, lastName, password, organization)
                 .inputPosition("Manager")
                 .clickSignUpButton();
@@ -42,14 +37,14 @@ public class PartnerRegistrationTest extends BaseTest {
         // Verification
         WebElement successContent = driver.findElement(By.id("content"));
         Assertions.assertTrue(successContent.isDisplayed(), "Success message is not present on the page");
-        CongratsNgoPage congratsNgoPage = new CongratsNgoPage(log);
+        CongratsNgoPage congratsNgoPage = new CongratsNgoPage();
         congratsNgoPage.switchToMailHog();
 
         //Clicking on confirmation link. Congratulation message!
-        MailHogPage mailHogPage = new MailHogPage(log);
+        MailHogPage mailHogPage = new MailHogPage();
         mailHogPage.waitForEmail(email);
         mailHogPage.clickConfirmationLink();
-        NewConfirmationPage newConfirmationPage = new NewConfirmationPage(log);
+        NewConfirmationPage newConfirmationPage = new NewConfirmationPage();
         newConfirmationPage.switchToLastTab();
         newConfirmationPage.waitForConfirmationMessage();
 
@@ -58,6 +53,7 @@ public class PartnerRegistrationTest extends BaseTest {
         Assertions.assertTrue(pageSource.contains("Your email confirmed!"), "Email has not been confirmed");
         log.info("Your email was confirmed. Congratulation!");
     }
+
 
 }
 
