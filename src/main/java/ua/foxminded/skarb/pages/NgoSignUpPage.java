@@ -1,6 +1,7 @@
 package ua.foxminded.skarb.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,9 +17,8 @@ public class NgoSignUpPage extends BasePageObject {
 
     public String randomEmail;
     public String randomPassword;
-    public NgoSignUpPage() {
-        super();
-    }
+    private static final Logger log = LogManager.getLogger();
+
 
     private SelenideElement emailElement = $("#email");
     private SelenideElement firstNameElement = $("#firstName");

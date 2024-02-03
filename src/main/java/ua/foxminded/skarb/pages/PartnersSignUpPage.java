@@ -1,6 +1,7 @@
 package ua.foxminded.skarb.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.support.ui.Select;
 
@@ -9,10 +10,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class PartnersSignUpPage extends BasePageObject {
 
-    public PartnersSignUpPage() {
-        super();
-    }
-
+    private static final Logger log = LogManager.getLogger();
     private SelenideElement signUpButton = $x("//button[@name='submit']");
     private SelenideElement emailElement = $("#email");
     private SelenideElement firstNameElement = $("#firstName");

@@ -2,6 +2,7 @@ package ua.foxminded.skarb.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WindowType;
 
@@ -14,10 +15,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class NewConfirmationPage extends BasePageObject {
 
-    public NewConfirmationPage() {
-        super();
-    }
-
+    private static final Logger log = LogManager.getLogger();
     private SelenideElement confirmationMessage = $x("//div[@class='alert alert-success']//h3[@class='display-3 text-center']");
 
     public SelenideElement getConfirmationMessage() {

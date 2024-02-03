@@ -11,12 +11,7 @@ import static com.codeborne.selenide.Condition.visible;
 
 public class BasePageObject {
 
-    protected static Logger log;
-    //private static final Logger log = LogManager.getLogger();
-
-    public BasePageObject() {
-        log = LogManager.getLogger(this.getClass());
-    }
+    private static final Logger log = LogManager.getLogger();
 
     // Wait for given number of seconds for element with given locator to be visible on the page
     protected void waitElementTillVisibility(SelenideElement element, Integer... timeOutInSeconds) {

@@ -2,6 +2,7 @@ package ua.foxminded.skarb.pages;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,16 +21,13 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class MailHogPage extends BasePageObject {
 
-    public MailHogPage() {
-        super();
-    }
-
+    private static final Logger log = LogManager.getLogger();
     private SelenideElement emailConfirmationContentElement = $x("//div[@id='content']//h3[@class='display-3 text-center']");
     private SelenideElement confirmationLinkElement = $x("//div[@class='tab-pane ng-binding active']//a[@target='_blank']");
 
     public void waitForEmail(String emailToWait) {
         // Wait for the email element containing the specific text to become visible and then click
-        SelenideElement recentEmailMessageElement = $x("//div[contains(text(),'" + emailToWait + "')]").should(visible, Duration.ofSeconds(80));
+        SelenideElement recentEmailMessageElement = $x("//div[contains(text(),'" + emailToWait + "')]").shouldBe(visible, Duration.ofSeconds(80));
         recentEmailMessageElement.click();
         log.info("Email containing '" + emailToWait + "' was found and clicked.");
     }
