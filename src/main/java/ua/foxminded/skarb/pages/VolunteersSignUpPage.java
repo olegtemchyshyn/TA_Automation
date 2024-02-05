@@ -1,6 +1,7 @@
 package ua.foxminded.skarb.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.support.ui.Select;
 
@@ -9,15 +10,13 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class VolunteersSignUpPage extends BasePageObject {
 
-    public VolunteersSignUpPage() {
-        super();
-    }
-    private SelenideElement emailElement = $("email");
-    private SelenideElement firstNameElement = $("firstName");
-    private SelenideElement lastNameElement = $("lastName");
-    private SelenideElement passwordElement = $("password");
-    private SelenideElement confirmPasswordElement = $("confirmPassword");
-    private SelenideElement categoryElement = $("categories");
+    private static final Logger log = LogManager.getLogger();
+    private SelenideElement emailElement = $("#email");
+    private SelenideElement firstNameElement = $("#firstName");
+    private SelenideElement lastNameElement = $("#lastName");
+    private SelenideElement passwordElement = $("#password");
+    private SelenideElement confirmPasswordElement = $("#confirmPassword");
+    private SelenideElement categoryElement = $("#categories");
     private SelenideElement signUpButton = $x("//button[@name='submit']");
 
     public void inputEmail(String email) {

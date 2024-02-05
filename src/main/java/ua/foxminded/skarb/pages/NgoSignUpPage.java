@@ -1,6 +1,7 @@
 package ua.foxminded.skarb.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,19 +17,19 @@ public class NgoSignUpPage extends BasePageObject {
 
     public String randomEmail;
     public String randomPassword;
-    public NgoSignUpPage() {
-        super();
-    }
-    private SelenideElement emailElement = $("email");
-    private SelenideElement firstNameElement = $("firstName");
-    private SelenideElement lastNameElement = $("lastName");
-    private SelenideElement passwordElement = $("password");
-    private SelenideElement confirmPasswordElement = $("confirmPassword");
-    private SelenideElement categoryElement = $("categoryIds");
+    private static final Logger log = LogManager.getLogger();
+
+
+    private SelenideElement emailElement = $("#email");
+    private SelenideElement firstNameElement = $("#firstName");
+    private SelenideElement lastNameElement = $("#lastName");
+    private SelenideElement passwordElement = $("#password");
+    private SelenideElement confirmPasswordElement = $("#confirmPassword");
+    private SelenideElement categoryElement = $("#categoryIds");
     private SelenideElement signUpButton = $x("//button[@name='submit']");
-    private SelenideElement maleSexRadioButton = $("male");
-    private SelenideElement organizationNameElement = $("organizationName");
-    private SelenideElement positionInOrganizationElement = $("positionInOrganization");
+    private SelenideElement maleSexRadioButton = $("#male");
+    private SelenideElement organizationNameElement = $("#organizationName");
+    private SelenideElement positionInOrganizationElement = $("#positionInOrganization");
 
     // click on "Female" rondo button
     public void clickMaleRondoButon() {

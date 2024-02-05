@@ -4,11 +4,14 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import ua.foxminded.skarb.model.Volunteer;
 import ua.foxminded.skarb.pages.VolunteersSignUpPage;
 import ua.foxminded.skarb.testdata.DataGenerator;
-import ua.foxminded.skarb.builder.Volunteer;
+import ua.foxminded.skarb.builder.VolunteerBuilder;
 
 public class VolunteerRegistrationTest extends BaseTest {
+
+    Volunteer randomVolunteer = Volunteer.getRandomVolunteer();
 
     @Test
     public void registerVolunteer() {
@@ -21,13 +24,13 @@ public class VolunteerRegistrationTest extends BaseTest {
         Assertions.assertEquals(driver.getCurrentUrl(), url, "The expected URL doesn't match current URL");
         log.info("Volunteer page was open");
 
-        String firstName = DataGenerator.dataGenerator(5);
-        String lastName = DataGenerator.dataGenerator(6);
-        String password = DataGenerator.generatePassword();
-        String email = firstName + "." + lastName + DataGenerator.domainExample();
+        String firstName = randomVolunteer.getFirstName();
+        String lastName = randomVolunteer.getLastName();
+        String password = randomVolunteer.getPassword();
+        String email = randomVolunteer.getEmail();
 
         // Use the Volunteer.Builder to create a Volunteer instance
-        Volunteer volunteer = new Volunteer.Builder()
+        VolunteerBuilder volunteer = new VolunteerBuilder.Builder()
                 .withEmail(email)
                 .withFirstName(firstName)
                 .withLastName(lastName)
