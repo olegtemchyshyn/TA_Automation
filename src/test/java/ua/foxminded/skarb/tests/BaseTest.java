@@ -1,5 +1,6 @@
 package ua.foxminded.skarb.tests;
 
+import com.codeborne.selenide.WebDriverRunner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
@@ -18,6 +19,7 @@ public class BaseTest {
     public void setUp() {
         log = LogManager.getLogger(getClass());
         driver = new ChromeDriver();
+        WebDriverRunner.setWebDriver(driver);
         log.info("Create driver: Chrome");
         driver.manage().window().maximize();
     }
@@ -39,4 +41,5 @@ public class BaseTest {
             e.printStackTrace();
         }
     }
+
 }

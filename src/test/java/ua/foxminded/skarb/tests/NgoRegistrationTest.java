@@ -5,19 +5,15 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import ua.foxminded.skarb.model.NGO;
 import ua.foxminded.skarb.pages.*;
-import ua.foxminded.skarb.testdata.DataGenerator;
 
 public class NgoRegistrationTest extends BaseTest {
-    String organization = DataGenerator.companyNameGenerator(4);
-    String firstName = DataGenerator.dataGenerator(5);
-    String lastName = DataGenerator.dataGenerator(6);
-    String password = DataGenerator.generatePassword();
-    String position = DataGenerator.generatePosition();
-    String email = firstName + "." + lastName + DataGenerator.domainExample();
+
+    NGO randomNgo = NGO.getRandomNGO();
 
     @Test
-    public void registerNgo() {
+        public void registerNgo() {
         log.info("Starting register a NGO");
 
         openRegistrationPage("https://skarb.foxminded.ua/registration/organizations");
@@ -36,16 +32,15 @@ public class NgoRegistrationTest extends BaseTest {
 
     @Step("Filing in the NGO registration form")
     private void fillingInForm() {
-        NgoSignUpPage ngoSignUpPage = new NgoSignUpPage(driver, log);
-        ngoSignUpPage.inputEmail(email);
-        ngoSignUpPage.inputFirstName(firstName);
-        ngoSignUpPage.inputLastName(lastName);
+        NgoSignUpPage ngoSignUpPage = new NgoSignUpPage();
+        ngoSignUpPage.inputEmail(randomNgo.getEmail());
+        ngoSignUpPage.inputFirstName(randomNgo.getFirstName());
+        ngoSignUpPage.inputLastName(randomNgo.getLastName());
         ngoSignUpPage.clickMaleRondoButon();
-        ngoSignUpPage.inputPasswords(password);
-        ngoSignUpPage.inputRandomOrganizationName(organization);
+        ngoSignUpPage.inputPasswords(randomNgo.getPassword());
+        ngoSignUpPage.inputRandomOrganizationName(randomNgo.getOrganization());
         ngoSignUpPage.selectProgrammingCategory();
-        ngoSignUpPage.inputPosition(position);
-        implicitWait(3);
+        ngoSignUpPage.inputPosition(randomNgo.getPosition());
         ngoSignUpPage.clickSignUpButton();
         log.info("NGO registration form was filled in");
     }
@@ -59,15 +54,15 @@ public class NgoRegistrationTest extends BaseTest {
 
     @Step("Confirming email")
     private void confirmEmail() {
-        CongratsNgoPage congratsNgoPage = new CongratsNgoPage(driver, log);
+        CongratsNgoPage congratsNgoPage = new CongratsNgoPage( );
         congratsNgoPage.switchToMailHog();
 
         //Clicking on confirmation link. Congratulation message!
-        MailHogPage mailHogPage = new MailHogPage(driver, log);
-        mailHogPage.waitForEmail(email);
+        MailHogPage mailHogPage = new MailHogPage();
+        mailHogPage.waitForEmail(randomNgo.getEmail());
         mailHogPage.clickConfirmationLink();
 
-        NewConfirmationPage newConfirmationPage = new NewConfirmationPage(driver, log);
+        NewConfirmationPage newConfirmationPage = new NewConfirmationPage();
         newConfirmationPage.switchToLastTab();
         newConfirmationPage.waitForConfirmationMessage();
 
@@ -80,10 +75,9 @@ public class NgoRegistrationTest extends BaseTest {
     @Step("Logging in with registered user credentials")
     private void logInNgo() {
         NewConfirmationPage.switchToLogin();
-
-        LoginPage loginPage = new LoginPage(driver, log);
-        loginPage.typeLogin(email);
-        loginPage.typePassword(password);
+        LoginPage loginPage = new LoginPage();
+        loginPage.typeLogin(randomNgo.getEmail());
+        loginPage.typePassword(randomNgo.getPassword());
         loginPage.clickEnterButton();
         log.info("Login button was clicked");
 

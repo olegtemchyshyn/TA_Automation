@@ -18,9 +18,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.14.1</version>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>7.0.6</version>
+          <!--  <scope>test</scope>-->
         </dependency>
         <dependency>
             <groupId>org.instancio</groupId>
@@ -61,12 +62,6 @@
             <version>2.22.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
@@ -95,6 +90,7 @@
             <version>1.9.21</version>
             <scope>runtime</scope>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>

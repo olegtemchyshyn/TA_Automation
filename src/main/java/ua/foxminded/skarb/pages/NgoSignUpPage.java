@@ -1,42 +1,35 @@
 package ua.foxminded.skarb.pages;
 
+import com.codeborne.selenide.SelenideElement;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 
 public class NgoSignUpPage extends BasePageObject {
 
     public String randomEmail;
     public String randomPassword;
+    private static final Logger log = LogManager.getLogger();
 
-    @FindBy(id = "email")
-    private WebElement emailElement;
-    @FindBy(id = "firstName")
-    private WebElement firstNameElement;
-    @FindBy(id = "lastName")
-    private WebElement lastNameElement;
-    @FindBy(id = "password")
-    private WebElement passwordElement;
-    @FindBy(id = "confirmPassword")
-    private WebElement confirmPasswordElement;
-    @FindBy(id = "categoryIds")
-    private WebElement categoryElement;
-    @FindBy(xpath = "//button[@name='submit']")
-    private WebElement signUpButton;
-    @FindBy(id = "male")
-    private WebElement maleSexRadioButton;
-    @FindBy(id = "organizationName")
-    private WebElement organizationNameElement;
-    @FindBy(id = "positionInOrganization")
-    private WebElement positionInOrganizationElement;
 
-    public NgoSignUpPage(WebDriver driver, Logger log) {
-        super(driver, log);
-        PageFactory.initElements(driver, this);
-    }
+    private SelenideElement emailElement = $("#email");
+    private SelenideElement firstNameElement = $("#firstName");
+    private SelenideElement lastNameElement = $("#lastName");
+    private SelenideElement passwordElement = $("#password");
+    private SelenideElement confirmPasswordElement = $("#confirmPassword");
+    private SelenideElement categoryElement = $("#categoryIds");
+    private SelenideElement signUpButton = $x("//button[@name='submit']");
+    private SelenideElement maleSexRadioButton = $("#male");
+    private SelenideElement organizationNameElement = $("#organizationName");
+    private SelenideElement positionInOrganizationElement = $("#positionInOrganization");
 
     // click on "Female" rondo button
     public void clickMaleRondoButon() {
@@ -46,13 +39,13 @@ public class NgoSignUpPage extends BasePageObject {
 
     // enter organization random name
     public void inputRandomOrganizationName(String organization) {
-        organizationNameElement.sendKeys(organization);
+        organizationNameElement.setValue(organization);
         log.info("Organization name was written: " + organization);
     }
 
     //Type partners' occupation
     public NgoSignUpPage inputPosition(String position) {
-        positionInOrganizationElement.sendKeys(position);
+        positionInOrganizationElement.setValue(position);
         log.info("Position: " + position + " was written.");
         return this;
     }
@@ -69,27 +62,27 @@ public class NgoSignUpPage extends BasePageObject {
     public CongratsNgoPage clickSignUpButton() {
         signUpButton.click();
         log.info("Sign Up button was clicked.");
-        return new CongratsNgoPage(driver, log);
+        return new CongratsNgoPage();
     }
 
     public void inputEmail(String email) {
-        emailElement.sendKeys(email);
+        emailElement.setValue(email);
         log.info("Email was written: " + email);
     }
 
     public void inputFirstName(String firstName) {
-        firstNameElement.sendKeys(firstName);
+        firstNameElement.setValue(firstName);
         log.info("First name was written: " + firstName);
     }
 
     public void inputLastName(String lastName) {
-        lastNameElement.sendKeys(lastName);
+        lastNameElement.setValue(lastName);
         log.info("Last name was written: " + lastName);
     }
 
     public void inputPasswords(String password) {
-        passwordElement.sendKeys(password);
-        confirmPasswordElement.sendKeys(password);
+        passwordElement.setValue(password);
+        confirmPasswordElement.setValue(password);
         log.info("Password & Confirmation were written");
     }
 }
